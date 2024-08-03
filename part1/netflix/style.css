@@ -34,9 +34,15 @@ body{
   width: fit-content;
 }
 .container{
-    width: 100%;
+    width: 50%;
     text-align: center;
     margin-top: 150px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    
 }
 
 .main-title{
@@ -44,16 +50,29 @@ body{
     font-size: 50px;
     z-index: 1000;
 }
-footer
-{
-    position:fixed;
-    bottom: 0px;
-    background-color: black;
-    color: red;
-    font-weight: 900;
-    padding: 25px;
-    width: 100%;
-    font-size: 25px;
-    text-align: center;
-    
+.email-signup {
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
 }
+
+.email-signup input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+
+.email-signup button {
+    background-color: #db0001;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
