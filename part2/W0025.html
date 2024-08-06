@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            display: flex;
+            background-color: rgb(219, 236, 120);
+            justify-content: space-evenly;
+            margin: 20px;
+        }
+        
+
+        .box{
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            background-color: rgb(158, 227, 239);
+            padding: 20px;
+           text-align: center;
+
+        }
+
+        .header{
+            display: flex;
+            border: solid 2px black;
+            height: 100px; 
+            
+        }
+        .content{
+            display: flex;
+            background-color: rgb(219, 236, 120);
+            margin: 200px;
+            border: solid black;
+        }
+        .header .c1{
+            margin: 20px;
+        
+        }
+        .header .c2{
+           justify-content: right;
+        }
+        .box1{
+            width: 200px;
+            height: 300px;
+            margin: 30px;
+            padding: 20px;
+          
+           }
+        img{
+            width:200px;
+            height:300px;
+            border: solid 5px black;
+        }
+        .text{
+            width: 200px;
+            height: 300px;
+            margin: 30px;
+            padding: 20px;
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">ONE</div>
+    <div class="box">TWO</div>
+    <div class="box">THREE</div>
+    <div class="box">FOUR</div>
+    </div>
+    <div class="header">
+        <div class="c1">My Application</div>
+        <div class="c2">Home</div>
+        <div class="c2">service</div>
+        <div class="c2">Login</div>
+
+    </div>
+
+    <div class="content">
+        <div class="box1">
+            <img src="https://picsum.photos/id/237/200/300" alt="text"/></div>
+        <div class="text">
+            <p>Hello</p>
+            <p>This is text</p>
+        </div>
+
+    </div>
+</body>
+</html>

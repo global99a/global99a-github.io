@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            color: green;
+        }
+        a:visited{
+            color: silver;
+        }
+        a:active{
+            color: red;
+        }
+        a:hover{
+            background-color: rgb(34, 36, 36);
+        }
+        div:hover{
+            background-color: aquamarine;
+            
+        }
+        div{
+            display: flex;
+           justify-content: center;
+        }
+        input:focus{
+            background-color: aquamarine;
+        }
+        /* input{
+            margin-top: 10px;
+            
+        } */
+         input[type=text]
+         {
+            background-color: #bebebb;
+         }
+         input[type=button],input[type=reset]{
+            background-color: rgb(215, 179, 247);
+         }
+        button{
+            background-color: aqua;
+            padding: 10px;
+            width: 150px;
+            border:solid 1px rgb(176, 176, 240);
+        }
+        
+
+    </style>
+</head>
+<body>
+    <a href="a">Home</a>
+    <a href="google.com">Google</a>
+    <div>
+        Welcome tho this page
+    </div>
+    <form>
+    <p><input type="text" placeholder="Email"></input></p>
+    <p><input type="text" placeholder="Name"></input></p>
+    <p><input type="text" placeholder="Password"></input></p>
+    <p><input type="button" value="submit"></input>
+    <input type="reset" value="reset"></input></p>
+    <button>Submit</button>
+    </form>
+    </body>
+</html>
