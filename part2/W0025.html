@@ -24,33 +24,39 @@
 
         }
 
-        .header{
-            display: flex;
-            border: solid 2px black;
-            height: 100px; 
-            
-        }
         .content{
             display: flex;
             background-color: rgb(219, 236, 120);
             margin: 200px;
             border: solid black;
         }
-        .header .c1{
-            margin: 20px;
-        
+
+        .header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;          
+    padding: 10px 20px;           
+    background-color: #f8f9fa;     
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
         }
-        .header .c2{
-           justify-content: right;
-        }
+
+        .left {
+    margin: 0;                    
+    font-size: 1.5rem;            
+    color: #333;                   
+     }
+.right {
+    display: flex;
+                   
+}
+
         .box1{
             width: 200px;
             height: 300px;
             margin: 30px;
             padding: 20px;
-          
-           }
-        img{
+        }
+s        img{
             width:200px;
             height:300px;
             border: solid 5px black;
@@ -73,10 +79,11 @@
     <div class="box">FOUR</div>
     </div>
     <div class="header">
-        <div class="c1">My Application</div>
-        <div class="c2">Home</div>
-        <div class="c2">service</div>
-        <div class="c2">Login</div>
+        <div class="left">My Application</div>
+        <div class="right">About</div>
+        <div class="right">Contact</div>
+        <div class="right">Services</div>
+        </div>
 
     </div>
 
