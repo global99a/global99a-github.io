@@ -1,6 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/netflix-font');
 body{
-    background-image: url("images/background.jpg");
+    background-image: url("/part1/netflix/images/background.jpg");
 
     background-repeat: no-repeat;
     background-size:cover;
