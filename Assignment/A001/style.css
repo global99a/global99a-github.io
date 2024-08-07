@@ -1,7 +1,59 @@
-@import url('https://fonts.cdnfonts.com/css/netflix-font');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
 body{
-    background-image: url("/part1/netflix/images/background.jpg");
+    background : #000;
+    color: #fff;
+}
+.root{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/part1/netflix/images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
 
+}
+nav h1{
+    width: 150px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 ;
+}
+nav .language{
+    padding: 10px 20px;
+    font-size: 12px;
+    margin: auto;
+    background:none;
+    color:#fff;
+    margin-right: 15px;
+
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+
+
+/* /* @import url('https://fonts.cdnfonts.com/css/netflix-font');
+*
+body{
+    background-color: #000  ;
+    background-image: url("/part1/netflix/images/background.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     color:white;
@@ -18,6 +70,20 @@ body{
     justify-content: space-between;
      align-items: center;
 }
+.root .navbar .language{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 7px 10px;
+    color: rgb(13, 13, 13);
+    background: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.root .navbar .language a :hover{
+    background-color: blue;
+}
 .img-logo {
   width: 14% ;
 }
@@ -31,8 +97,8 @@ body{
   border-radius: 5px;
   cursor:pointer;
   /* display: inline-block; */
-  width: fit-content;
-}
+  /* width: fit-content;
+} */
 .container{
     width: 50%;
     text-align: center;
@@ -75,4 +141,369 @@ body{
     cursor: pointer;
     padding: 15px 30px;
 }
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+
+.question {
+    width: 100%;
+    min-height: 950px;
+    background-color: #000;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+  }
+  
+  .question h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .quest {
+    width: 51%;
+    min-height: 75px;
+    background-color: #303030;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    margin: 5px 0;
+  }
+  
+  .quest .textbox {
+    display: flex;
+    text-align: left;
+  
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+    font-size: 25px;
+    margin: 0 30px;
+    word-spacing: 5px;
+    text-align: left;
+  }
+  
+  .quest i {
+    margin: 0 30px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .quest:focus {
+    background-color: red;
+  }
+  
+  .search1 {
+    width: 50%;
+    background-color: none;
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .box1 {
+    width: 100%;
+    min-height: 65px;
+  }
+  
+  .try1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #e50914;
+    min-height: 70px;
+    width: 70%;
+    color: white;
+    font-size: 30px;
+    margin: 50px 0;
+    text-transform: uppercase;
+  }
+  
+  .question h4 {
+    color: white;
+    margin-top: -20px;
+    padding-bottom: 40px;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 375px;
+    background-color: black;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-around;
+  
+  }
+  
+  .footercon {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 50px;
+    background-color: transparent;
+  }
+  
+  .footer .flex1 {
+    color:#999;;
+    justify-content:space-around;
+    align-items:flex-start;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    width:100%;
+    font-size: 17px;
+    min-height: 30px;
+  
+  }
+  
+  .footer .flex1 h5 {
+    align-self:flex-start;
+  }
+  
+  .list1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-items: flex-start;
+    align-self: center;
+    justify-content: center;
+    min-height:50px;
+    font-size: 13px;
+    padding: 0px 70px;
+    text-align: left;
+  }
+  
+  .list1 li {
+    font-size: 13px;
+    margin: 7px -10px;
+    list-style-type: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-items: center;
+    align-self: flex-start;
+    justify-content: center;
+  }
+  
+  .list1 li a {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  li a {
+    font-size: 13px;
+    text-align: center;
+    color: #999;
+  }
+  
+  
+  .footertxt {
+    color:white;
+    display:flex;
+    flex-direction:row;
+    align-items:flex-end;
+    justify-content: flex-end;
+  }
+  
+  .end {
+    width:100%;
+    min-height:50px;
+  background-color: black;
+  justify-content:space-around;
+  align-items:flex-start;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  color:#999;
+  margin-top:-60px;
+  }
+  
+  .end h2 {
+    display:flex;
+    flex-direction: row;
+  font-size:16px;
+  }
+  
+  @media (min-width: 250px) and (max-width: 980px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .container1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      align-self: center;
+    }
+  
+    .area h1 {
+      font-size: 40px;
+      line-height:60px;
+    }
+  
+    .area h3 {
+      margin-top: 10px;
+    }
+  
+    .container1 img {
+      width: 60%;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      min-height: 250px;
+      margin-bottom: 30px;
+  
+    }
+  
+  
+  
+    .search {
+      display: flex;
+      flex-direction: column;
+      margin: 30px;
+      width: 50%;
+      margin: 0 10px;
+    }
+  
+    .box {
+      width: 100%;
+      margin-bottom: 20px;
+      margin:30px;
+    }
+  
+    .try {
+      width: 200px;
+      margin: 0 10px;
+      font-size:17px;
+      min-height:50px;
+    }
+  
+    .search1 {
+      display: flex;
+      flex-direction: column;
+      margin: 30px;
+      width: 50%;
+      margin: 0 10px;
+      margin-bottom: 40px;
+    }
+  
+  h4 {
+    color:white;
+  }
+  
+    .box1 {
+      width: 100%;
+      margin-bottom: 20px;
+      margin:30px;
+    }
+  
+    .try1 {
+      width: 200px;
+      margin: 0 10px;
+      font-size:17px;
+      min-height:50px;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      text-align: center;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .text h1 {
+      font-size: 2rem;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .text p {
+      font-size: 1.2rem;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .quest .textbox {
+      font-size: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .quest {
+      width: 80%;
+      min-height: 75px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
 
