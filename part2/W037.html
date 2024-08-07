@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+                display: flex;
+                flex-wrap: wrap;
+        }
+        @media only screen and (max-width: 600px)
+        {
+            /*mobile*/
+            .box{
+                background-color: green;
+                width:100%;
+            }
+        }
+        @media only screen and (orientation: landscape)
+        {
+             /*tab*/
+            .box{
+                background-color: rgb(80, 132, 209);
+                width:50%;
+            }
+        }
+        @media only screen and (orientation: portrait)
+        {
+             /*desktop*/
+            .box{
+                background-color: rgb(247, 37, 177);
+                width:20%;
+            }
+        }
+    </style>
+</head>
+<body><div class="container">
+    <div class="box">HOME</div>
+    <div class="box">SERVICES</div>
+    <div class="box">LOGIN</div>
+</div>
+</body>
+</html>
