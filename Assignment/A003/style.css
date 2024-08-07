@@ -1,0 +1,10 @@
+.container{
+    display:flex;
+    justify-content: center;
+   margin:200px;
+   
+}
+.text h3{
+    color:blue;
+    font-family: Helvetica, Arial, sans-serif;
+}
