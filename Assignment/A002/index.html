@@ -6,8 +6,10 @@
     <title>Document</title>
     <style>
       .header {
+        width: 100%;
         background-color: #333;
         overflow: hidden;
+        text-shadow: 1px 1px 1px rgb(214, 214, 240);
       }
       .header a {
         float: left;
@@ -27,30 +29,48 @@
         float: right;
       }
 
-      .content {
+      .st {
+        background-color: azure;
+        margin-top: 5px;
         display: flex;
-        width: 100%;
-        justify-content: center;
-        display: f;
+        text-align: center;
+        font-size: 30px;
+        justify-content: space-around;
+        align-items: center;
       }
-      .box {
+
+      .st img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .box1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 100px;
         padding: 20px;
       }
+
+      .box1 img {
+       border-radius: 50%;
+        margin: 20px;
+        width: 250px;
+        height: 250px;
+      }
+      
+      .box1 img:hover{
+        box-shadow: 2px 2px 2px 2px pink;
+      }
+
       .footer {
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
         text-align: center;
-        color: wheat;
         background-color: black;
-      }
-    .box img{
-        border-radius: 50%;
-        width: 300px;
-        height: 300px;
-       
+        color: white;
       }
     </style>
   </head>
@@ -64,13 +84,24 @@
       </div>
     </div>
     <hr />
-    <div class="content">
-      <div class="box"><img src="https://picsum.photos/id/24/200/300" /></div>
-      <div class="box"><img src="https://picsum.photos/id/25/200/300" /></div>
-      <div class="box"><img src="https://picsum.photos/id/26/200/300" /></div>
+
+    <div class="st">
+      <p>
+        Your Journey with Student Tribe Doesn't End Here<br />
+        It's Just the Beginning. Stay Curious,<br />
+        Stay Connected, Stay Ahead!
+      </p>
+      <img src="/Assignment/A001/images/rocket.jpg" />
     </div>
+
+    <div class="box1">
+      <img src="/image/flowr.jpg" />
+      <img src="https://picsum.photos/200/300" />
+      <img src="/image/officedesk.jpg" />
+    </div>
+
     <div class="footer">
-      <p>@copyright.All rights reserved</p>
+      <p>@copyright. All rights reserved</p>
     </div>
   </body>
 </html>
