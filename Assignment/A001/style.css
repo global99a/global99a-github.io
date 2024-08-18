@@ -84,188 +84,7 @@ nav button{
   .dropdown:hover .dropbtn {
     background-color: #3e8e41;
   }
-  .FAQ__title {
-    font-size: 20px;
-  }
-
-  .FAQ__heading {
-    font-size: 38px;
-    font-weight: 500;
-    letter-spacing: 1px;
-  }
-
-  .FAQ__list {
-    padding: 1rem 5rem;
-  }
-
-  .FAQ__get__started__email {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transform: translateX(15%);
-  }
-}
-
-@media (min-width: 1024px) {
-  .navbar {
-    padding: 2% 5%;
-  }
-
-  .navbar__brand {
-    width: 150px;
-  }
-
-  .signin__button {
-    padding: 10px 20px;
-    font-size: 18px;
-  }
-
-  .dropdown__container {
-    padding: 10px 5px;
-  }
-
-  .navbar__nav__items {
-    gap: 30px;
-  }
-
-  .hero__card {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .form__container {
-    width: 50%;
-  }
-
-  .email__form__container {
-    flex-direction: row;
-    align-items: center;
-    gap: 1px;
-  }
-
-  .primary__button {
-    height: 50px;
-  }
-
-  .feature {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-  }
-
-  .feature__details {
-    text-align: left;
-    padding: 0 6rem;
-  }
-
-  .feature__title {
-    font-size: 50px;
-  }
-
-  .feature__sub__title {
-    font-size: 25px;
-  }
-
-  .feature__image__container {
-    max-width: 500px;
-  }
-
-  .feature:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-  .feature__2__poster__container {
-    max-width: 20em;
-    height: 100px;
-    padding: 1rem;
-  }
-
-  .poster__container {
-    width: 20%;
-  }
-
-  .FAQ__list {
-    padding: 1rem 25rem;
-  }
-
-  .FAQ__get__started__email {
-    transform: translateX(16%);
-  }
-
-  footer {
-    padding: 2rem 20rem;
-    justify-content: flex-start;
-    text-align: left;
-    align-items: flex-start;
-  }
-
-  .footer__row__2 {
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-  }
-
-  .footer__row__1,
-  .footer__row__3,
-  .footer__row__4 {
-    align-self: flex-start;
-  }
-}
-
-@media (min-width: 1254px) {}
-/* /* @import url('https://fonts.cdnfonts.com/css/netflix-font');
-*
-body{
-    background-color: #000  ;
-    background-image: url("/part1/netflix/images/background.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    color:white;
-    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
-    margin: 0px;
-}
-.navbar{
-    padding-top: 1%;
-    padding-left: 2vw;
-    padding-right: 4vw;
-    height: 10vh;
-    display: flex ;
-    flex-direction: row;
-    justify-content: space-between;
-     align-items: center;
-}
-.root .navbar .language{
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    padding: 7px 10px;
-    color: rgb(13, 13, 13);
-    background: none;
-    cursor: pointer;
-    margin-right: 15px;
-}
-.root .navbar .language a :hover{
-    background-color: blue;
-}
-.img-logo {
-  width: 14% ;
-}
-.sign-in {
-  background-color: red;
-  color: white;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 5px;
-  cursor:pointer;
-  /* display: inline-block; */
-  /* width: fit-content;
-} */
+  
 .container{
     width: 50%;
     text-align: center;
@@ -311,6 +130,7 @@ body{
 .features{
     padding: 50px 12%;
     font-size: 22px;
+    
 }
 .row{
     display: flex;
@@ -340,11 +160,159 @@ body{
     margin-bottom: 20px;
 
 }
-
-.faq{
-    padding: 10px 12%;
-    text-align: center;
-    font-size: 18px;
-    
+.faq-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.faq-container {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+details {
+  background-color: #333;
+  border-bottom: 1px solid #444;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+summary {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: auto;
+  list-style: none;
+}
+
+summary:hover {
+  color: #ccc;
+}
+
+details[open] summary {
+  color: #f0e8e3;
+}
+
+details p {
+  font-size: 16px;
+  padding: 10px 0;
+  color: #ddd;
+  line-height: 1.5;
+}
+.bottom {
+  text-align: center;
+}
+
+.bottom p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.email-bottom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.email-bottom input {
+  width: 70%;
+  padding: 15px;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  font-size: 16px;
+  position: relative;
+  margin: 10px;
+}
+/* White outline on focus */
+.email-bottom input:focus {
+  outline: 2px solid white;
+}
+
+/* Placeholder effect (moving up) */
+.email-bottom input::placeholder {
+  color: #999;
+  font-size: 16px;
+}
+
+.email-bottom button {
+  background-color: #e50914;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 30%;
+}
+
+/* Button hover effect */
+.email-bottom button:hover {
+  background-color: #f40612;
+}
+
+.email-bottom button:focus {
+  outline: none;
+}
+
+.footer {
+  padding: 40px;
+  background-color: #141414;
+  color: #757575;
+}
+
+.footer p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.footer-links a {
+  color: #757575;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.footer .call-info {
+  margin-bottom: 20px;
+}
+
+.footer select {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: 1px solid #333;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.footer select:focus {
+  outline: none;
+}
+.separator {
+  width: 100%;
+  height: 6px; /* Thickness of the separator */
+  background: #333; /* Color of the separator */
+  margin: 30px 0; /* Space above and below the separator */
+}
